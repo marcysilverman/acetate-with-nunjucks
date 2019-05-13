@@ -1,0 +1,15 @@
+---
+items:
+  - title: Dogs
+    id: 1
+  - title: Cats
+    id: 2
+  - title: Snakes
+---
+
+<h3 style="color: red"> Types of Animals </h3>
+<ul>
+{% for item in items %}
+  <li>{{ item.title }}</li>
+{% endfor %}
+</ul>
